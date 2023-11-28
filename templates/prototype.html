@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="static/protype.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="wrapper"></div>
+    </nav>
+    <section>
+      <div class="img_box">
+
+        <img src="./static/Texting-bro.png" alt="" />
+      </div>
+      <div class="content_box">
+        <div class="form_box">
+          <h1>Chatter Box</h1>
+          <form action="#">
+            <div class="input_box">
+              <span>Select Country</span>
+
+
+              <div class="selected-option">
+                <div>
+                  <span class="iconify" data-icon="flag:in-4x3"></span>
+                  <p>India</p>
+                </div>
+                <svg
+                  class="drop-arrow"
+                  viewBox="0 0 10 5"
+                  height="5"
+                  width="10"
+                  preserveAspectRatio="xMidYMid meet"
+                  class=""
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 0L5 5L10 0H0Z"
+                    fill="currentColor"
+                    fill-opacity="0.3"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+
+            <div class="input_box">
+              <span>Enter Mobile No.</span>
+              <div class="select-box">
+                <input type="tel" name="tel"/>
+                <div class="options">
+                  <input type="text" class="search-box" placeholder="Search" />
+                  <ol></ol>
+                </div>
+              </div>
+            </div>
+
+            <div class="input_box">
+
+              <a href={{url_for('verification')}}>Send Otp</a>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="./static/script.js"></script>
+  </body>
+</html>
